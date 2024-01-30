@@ -10,20 +10,16 @@
 <body>
     <header>
         <img class="logoHeading" id="logo" src="images/logo.png" alt="logo" title="logo" >
-        <p class="logoHeading" id="heading">Programming: Web Foundations</p>
+        <p class="logoHeading" id="heading">Programming: Web Foundations<br />Ivan Nimets</p>
     </header>
-    <p></p>
     <nav>
-        <p class="navigators"><a href=#inClassAssignments>inClass Assignments</a></p>
-        <p class="navigators"><a href=#homeworkAssignments>Homework Assignments</a></p>
+        <button class="navButtons"><label for="tab3"><span class="navigators">Massage</span></label></button>
+        <button class="navButtons"><label for="tab1"><span class="navigators">inClass Assignments</span></label></button>
+        <button class="navButtons"><label for="tab2"><span class="navigators">Homework Assignments</span></label></button>
     </nav>
-    <p></p>
-    <main id="massage">
-        <p> massage </p>
-    </main>
-    <main id="inClass">
-        <h3> <a name="inClassAssignments"></a>inClass Assignments: </h3>
-        <div class="assignments">
+    <main>
+        <input type="radio" class="hidden" name="mainPage" id="tab1" />
+        <div class="section">
             <p><strong>*</strong>  <a href="inClassAssignment1/index.html">InClass assignment 1</a></p>
             <p>&nbsp</p>
             <p><strong>*</strong>  <a href="styles/comeBackLater.html">InClass assignment 2</a></p>
@@ -32,10 +28,8 @@
             <p>&nbsp</p>
             <p><strong>*</strong>  <a href="styles/comeBackLater.html">InClass assignment 4</a></p>
         </div>
-    </main>
-    <main id="Homework">
-        <h3> <a name="homeworkAssignments"></a>Homework Assignments: </h3>
-        <div class="assignments">
+        <input type="radio" class="hidden" name="mainPage" id="tab2"/>
+        <div class="section">
             <p><strong>*</strong>  <a href="styles/comeBackLater.html">Homework Assignment 1</a></p>
             <p>&nbsp</p>
             <p><strong>*</strong>  <a href="styles/comeBackLater.html">Homework Assignment 2</a></p>
@@ -44,6 +38,14 @@
             <p>&nbsp</p>
             <p><strong>*</strong>  <a href="styles/comeBackLater.html">Homework Assignment 4</a></p>
         </div>
+        <input type="radio" class="hidden" name="mainPage" id="tab3" checked />
+        <div class="section" id="massage">
+            <p>This page was created on GitHub to demonstrate the assignments that Ivan Nimets is doing in class and as homework. <br /><br />To view the assignments, use the navigation bar.</p>
+        </div>
     </main>
+    <aside>
+        <h2 style="text-align: center; padding: 20px;"> Helpful links </h2>
+        <p>Ivan's GitHub repository - <a href="https://github.com/ivannimets/PROG1245">link</a></p>
+    </aside>
 </body>
 </html>

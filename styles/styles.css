@@ -3,62 +3,80 @@ body {
     font-family: 'Courier New', monospace;
 }
 header {
-    width: 1800px;
-    height: 200px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: fit-conntent;
     border: 1px solid #333;
     box-shadow: 8px 8px 5px #444;
-    padding: 40px 40px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
 }
 .logoHeading {
     display: inline-block;
 }
 #heading {
-    padding: 0px 50px;
+    height: fit-content;
+    margin-top: 0px;
+    margin-left: 20px;
     font-size: 65px;
     position: relative;
-    top: -70px;
+    bottom: 40px;
 }
 #logo {
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 
 nav{
-    width: 1800px;
-    height: 20px;
+    margin-bottom: 20px;
+    width: %;
+    height: fit-content;
     border: 1px solid #333;
     box-shadow: 8px 8px 5px #444;
-    padding: 40px 40px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
 }
 .navigators {
-    margin: auto;
+    font-size: 20px;
     display: inline-block;
     text-align: center;
-    width: 250px;
+    padding: 20px 50px;
+    width: fit-content;
 }
-#mainMassage {
-    width: 1200px;
-    height: 150px;
-    border: 1px solid #333;
-    box-shadow: 8px 8px 5px #444;
-    box-shadow: 8px 8px 5px #444;
-    padding: 40px 40px;
-    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+.navButtons {
+    margin: 5px;
 }
 
 main {
-    width: 1200px;
-    height: 30em;
+    display: inline-block;
+    height: fit-content;
     border: 1px solid #333;
     box-shadow: 8px 8px 5px #444;
-    padding: 40px 40px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
-}
-.assignments{
-    position: relative;
-    left: 40px;
-    padding: 20px 20px;
+    width: 70%;
+    min-height: 200px;
 }
 
+input.hidden {
+    display: none;
+}
+
+.section {
+    display: none;
+    padding: 40px 40px;
+}
+
+input.hidden:checked + .section {
+    display: block;
+}
+
+aside {
+    min-height: 200px;
+    margin-bottom: 20px;
+    width: 29%;
+    height: fit-content;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    float: right;
+}
 
