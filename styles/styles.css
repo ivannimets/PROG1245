@@ -28,6 +28,7 @@ header {
 
 
 nav{
+    display: flex;
     margin-bottom: 20px;
     width: %;
     height: fit-content;
@@ -67,6 +68,10 @@ input.hidden {
 
 input.hidden:checked + .section {
     display: block;
+}
+
+.assignments {
+    padding: 20px;
 }
 
 aside {
