@@ -1,0 +1,76 @@
+/*Ivan Nimets 8871071*/
+body {
+	width: 90%;
+	max-width: 2500px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+	font-family: "Fira Sans", sans-serif;
+	padding: 0;
+}
+header, footer {
+	border: 5px solid hsl(240, 100%, 80%);
+	border-radius: 30px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 30px;
+}
+h1, h2{
+	color: hsl(240, 100%, 30%);
+	font-variant: small-caps;
+}
+footer p {
+	font-size: 0.8rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: hsl(240, 10%, 50%);
+}
+aside {
+	margin: auto;
+	padding-left: 3%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 30%;
+}
+main {
+	margin: auto;
+	width: 67%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#mainSide {
+	display: flex;
+}
+footer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mainimg {
+	border: 5px solid #333;
+	box-shadow: 3px 3px 3px #444;
+}
+figcaption {
+	font: bold smaller sans-serif;
+	font-variant: small-caps;
+}
+
+q {
+	font-family: cursive;
+	font-style: italic;
+	font-size: 1.8rem;
+}
+
+ul li {
+	list-style: none;
+	line-height: 50px;
+}
+
+ul > a {
+	color: hsl(120, 40%, 50%);
+	text-decoration: none;
+}
+aside a:hover {
+	color: red;
+}
