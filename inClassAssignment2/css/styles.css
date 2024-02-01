@@ -1,0 +1,11 @@
+/*Ivan Nimets 8871071*/
+body {
+	font: 1.5rem sans-serif;
+	background-color: hsla(120, 60%, 40%, 0.5);
+	height: 70vh;
+	width: 70vw;
+}
+h2 {
+	color: #f0f;
+	font-size: 200%;
+}
