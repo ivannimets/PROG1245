@@ -1,0 +1,40 @@
+/*Ivan Nimets 8871071*/
+body {
+	font: 1.5rem sans-serif;
+	background-color: hsla(120, 60%, 40%, 0.5);
+	height: 70vh;
+	width: 100vw;
+}
+h2 {
+	color: #f0f;
+	font-size: 200%;
+}
+main {
+	width: 63%;
+	float: left;
+}
+aside {
+	width: 29%;
+	float: right;
+}
+
+footer {
+	clear: both;
+}
+.structural {
+	padding: 0.5%;
+	margin: 1%;
+	border: 0.5vw solid gold;
+}
+#par1 {
+	color: rgb(30, 255, 255);
+}
+#par2 {
+	color: rgb(40, 50, 100);
+}
+footer p {
+	font-size: 90%;
+}
+li:hover {
+	color: #f2f;
+}
