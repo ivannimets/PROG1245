@@ -1,0 +1,123 @@
+/*Ivan Nimets 8871071*/
+html {
+	font: 20px sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: hsla(120, 60%, 40%, 0.5);
+	height: 70vh;
+	width: 100vw;
+}
+h2 {
+	color: #f0f;
+	font-size: 200%;
+}
+main {
+	flex: 2 1 70%;
+}
+aside {
+	flex: 1 1 30%;
+}
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#gallery figure {
+	border: 0.313rem solid pink;
+}
+#gallery figure img {
+	width: 80%;
+	height: 80%;
+}
+footer {
+	
+}
+.structural {
+	padding: 0.5%;
+	margin: 1rem;
+	border: 0.5vw solid gold;
+}
+#par1 {
+	color: rgb(30, 255, 255);
+}
+#par2 {
+	color: rgb(40, 50, 100);
+}
+footer p {
+	font-size: 90%;
+}
+aside ul a:hover {
+	color: #f2f;
+}
+h1 {
+	color: red;
+	font-size: 2.5rem;
+}
+aside ul li {
+	list-style: circle;
+	line-height: 200%;
+	color: rgba(0, 50, 50, 0.5);
+}
+nav li {
+	display: inline;
+	list-style: none;
+}
+nav li a {
+	padding: 1em;
+	border: 0.125rem solid indigo;
+	color: indigo;
+	background-color: cornsilk;
+	text-decoration: none;
+}
+nav a:hover {
+	border-color: cornsilk;
+	color: cornsilk;
+	background-color: indigo;
+}
+form {
+	border-width: 0.313rem;
+	border-style: dashed;
+	border-color: indigo;
+	padding: 0.313rem;
+}
+input[type="text"], input[type="email"], input[type="submit"], input[type="option"], select {
+	width: 50%;
+	display: block;
+	height: 2em;
+}
+input[type="radio"], input[type="checkbox"] {
+	height: 2em;
+	width: 2em;
+}
+select, option, label, legend, input[type=submit] {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+textarea {
+	display: block;
+	width: 50%;
+}
+fieldset {
+	border: none;
+}
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+@media only screen and (max-width: 600px) {
+	html {
+		font-size: 10px;
+	}
+	#gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	section {
+		flex-direction: column;
+	}
+}
