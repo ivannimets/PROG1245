@@ -1,0 +1,258 @@
+/*Ivan Nimets 8871071*/
+html {
+	font: 1.5rem sans-serif;
+}
+header {
+	grid-area: head;
+	padding: 2rem;
+	width: calc(100% - 4.5rem);
+}
+nav {
+	width: 100%;
+	grid-area: nav;
+}
+main {
+	width: 100%;
+	grid-area: main;
+}
+aside {
+	width: 100%;
+	grid-area: aside;
+}
+footer {
+	grid-area: foot;
+	padding: 1% 2%;
+	width: calc(96% - 0.5rem);
+}
+body {
+	display: grid;
+	margin: auto;
+	width: 90vw;
+	max-width: 2500px;
+	grid: 1fr / 1fr 1fr 1fr;
+	grid-template-areas:
+	'head head head'
+	'nav nav .'
+	'main main aside'
+	'foot foot foot';
+	grid-gap: 1rem;
+}
+.headerFooter {
+	height: fit-content;
+	border: 0.25rem solid hsl(240, 100%, 80%);
+	border-radius: 2rem;
+	background: linear-gradient(0.25turn, #fff, #81a8c8);
+}
+h1, h2{
+	margin: 0;
+	color: hsl(240, 100%, 30%);
+	font-variant: small-caps;
+}
+footer p {
+	font-size: 0.8rem;
+	color: hsl(240, 10%, 50%);
+}
+aside {
+	width: calc(100% - 2.5rem);
+	padding: 1rem;
+	background-image: linear-gradient(
+		rgba(255, 255, 255, 0.45), 
+		rgba(255, 255, 255, 0.45)
+	),
+	url("../images/athens.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: 0.25rem solid hsl(240, 100%, 80%);
+	border-radius: 2rem;
+}
+aside ul {
+	background-image: linear-gradient(
+		rgba(255, 255, 255, 0.60), 
+		rgba(255, 255, 255, 0.60)
+	);
+	border-radius: 1rem;
+}
+main {
+
+}
+
+footer {
+}
+
+q {
+	font-family: cursive;
+	font-style: italic;
+	font-size: 1.8rem;
+}
+
+ul li {
+	list-style: none;
+	line-height: 2.5rem;
+}
+
+aside li, aside a {
+	color: hsl(120, 0%, 0%);
+	text-decoration: none;
+}
+aside a:hover {
+	color: red;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+nav>ul>li{
+	margin: 0.25rem;
+	background-color: #dee8f1;
+	border: 3px solid hsl(240, 100%, 80%);
+	border-radius: 0.5rem;
+	flex: 1 1 20%;
+	display: inline-block;
+	position: relative;
+}
+
+nav a {
+	display: block;
+	color: hsl(240, 100%, 30%);
+	text-decoration: none;
+}
+
+nav ul li ul {
+	width: 20rem;
+	border-radius: 0.5rem;
+	position: absolute;
+	z-index: 1;
+	text-align: left;
+	background-color: #dee8f1;
+	box-shadow: 0 0 0.3rem hsl(240, 100%, 30%);
+}
+
+nav ul li ul li a{
+	color: hsl(240, 100%, 30%);
+	padding: 0.5rem;
+	display: block;
+}
+
+nav ul li ul li:hover a:hover{
+	color: white;
+	background-color: hsl(240, 100%, 80%);
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover {
+	background-color: hsl(240, 100%, 80%);
+}
+
+nav ul li:hover > a {
+	color: white;
+}
+nav ul li:hover ul{
+	display: block;
+}
+
+#index th, td{
+	border: 1px solid black;
+}
+#index section {
+	margin: 1rem 0;
+}
+#mainImg {
+	float: right;
+	width: 16rem;
+	shape-outside: polygon(35.37% 7.06%, 15.17% 26.87%, 26.51% 56.47%, 2.62% 58.73%, 12.92% 87.4%, 51.68% 101.06%, 84.23% 90.6%, 100.01% 62.31%, 77.29% 57.36%, 85.84% 27.53%, 72.5% 9.77%);
+	clip-path: polygon(35.37% 7.06%, 15.17% 26.87%, 26.51% 56.47%, 2.62% 58.73%, 12.92% 87.4%, 51.68% 101.06%, 84.23% 90.6%, 100.01% 62.31%, 77.29% 57.36%, 85.84% 27.53%, 72.5% 9.77%);
+}
+#gallery picture {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+}
+#gallery picture > img {
+	width: 100%;
+	height: 90%;
+	clip-path: polygon(50% 0, 10% 10%, 0 50%, 10% 90%, 50% 100%, 90% 90%, 100% 50%, 90% 10%);
+	content: polygon(50% 0, 10% 10%, 0 50%, 10% 90%, 50% 100%, 90% 90%, 100% 50%, 90% 10%);
+}
+#contact form {
+	margin: 2rem;
+	border-width: 0.313rem;
+	border-style: dashed;
+	border-color: indigo;
+	padding: 0.313rem;
+}
+#contact input[type="text"], input[type="email"], input[type="submit"], input[type="option"],input[type="date"], select {
+	width: 50%;
+	display: block;
+	height: 2em;
+}
+#contact input[type="radio"], input[type="checkbox"] {
+	height: 2em;
+	width: 2em;
+}
+#contact select, option, label, legend, input[type=submit] {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+#contact textarea {
+	display: block;
+	width: 50%;
+}
+#contact fieldset {
+	border: none;
+}
+@media only screen and (max-width: 1000px) {
+	html {
+		font: 1.3rem sans-serif;
+	}
+	#gallery picture {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 1rem;
+		gap: 1rem;
+	}
+	aside {
+		background-repeat: repeat;
+		background-size: auto;
+	}
+}
+@media only screen and (max-width: 600px) {
+	html {
+		font: 0.8rem sans-serif;
+	}
+	body {
+		grid: 1fr / 1fr 1fr;
+		grid-template-areas:
+		'head head'
+		'nav nav'
+		'main main'
+		'aside aside'
+		'foot foot';
+		grid-gap: 1rem;
+	}
+	#gallery picture {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 1rem;
+		gap: 1rem;
+	}
+	aside {
+		background-image: none;
+		border: none;
+		padding: 0;
+	}
+	aside ul {
+		background-image: none;
+		border-radius: 0;
+	}
+}
